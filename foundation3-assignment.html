@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add7(n) {
+            return n + 7;
+        }
+
+        function multiply(n, m) {
+            return n * m;
+        }
+
+        function capitalized(str) {
+            const newStr = str.toLowerCase();
+            const firstLetter = newStr.slice(0, 1).toUpperCase();
+            // console.log(firstLetter);
+            return newStr.replace(newStr.slice(0, 1), firstLetter)
+        }
+
+        // const str = "i am qi liu".slice(0, 1).toUpperCase();
+        // console.log(str);
+
+        console.log(capitalized("i am Qi liu"));
+
+        function lastLetter(str) {
+            if (str.length == 0) {
+                return undefined;
+            }
+            const letter = str.slice(-1, -3);
+            console.log(letter);
+            return letter;
+        }
+
+        console.log(lastLetter("qiliu"));
+    </script>
+</body>
+</html>
